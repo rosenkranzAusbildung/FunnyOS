@@ -5,12 +5,12 @@ cat config/10-native.sh | sudo pacman -Sy
 
 # install AUR packages
 sudo pacman -Sy --needed base-devel
-git clone https://aur.archlinux.org/paru.git
+git clone https://aur.archlinux.org/yay.git
 cd paru
 makepkg -si
 cd ..
 
-cat config/20-foregin.sh | paru -Sy
+cat config/20-foregin.sh | yay -Sy
 
 # apply configs
 rsync config/files /
