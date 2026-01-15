@@ -1,5 +1,12 @@
 #! /bin/bash
 
+# install nvidia drivers if nececarry
+read -p "install nvidia drivers? [y/n]" -n 1 -r
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+	sudo pacman -S nvidia-open-dkms
+fi
+
 # install pacman packages
 cat config/10-native.sh | sudo pacman -Sy -
 
@@ -14,7 +21,7 @@ cat config/20-foregin.sh | yay -Sy -
 
 # apply configs
 sudo pacman -Sy --needed rsync
-rsync config/files /
+sudo rsync -cr config/files/ /
 
 # apply services
 sudo systemctl disable getty@tty1.service
