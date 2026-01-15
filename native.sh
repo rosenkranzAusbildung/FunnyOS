@@ -24,9 +24,6 @@ ly
 mplayer
 neovim
 netctl
-networkmanager
-networkmanager-openconnect
-networkmanager-openvpn
 niri
 noto-fonts
 noto-fonts-cjk
@@ -39,7 +36,6 @@ pipewire-pulse
 rofi
 thunar
 timeshift
-ttf-bitstream-vera
 ttf-dejavu
 ttf-liberation
 ttf-opensans
@@ -47,12 +43,5 @@ wev
 wireplumber
 wl-clipboard
 xdg-desktop-portal-gtk
-xdg-user-dirs
-xdg-utils
 xorg-server
-xorg-xdpyinfo
-xorg-xinit
-xorg-xinput
-xorg-xkill
-xorg-xrandr
 xwayland-satellite

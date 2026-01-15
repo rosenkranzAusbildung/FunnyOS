@@ -8,7 +8,7 @@ then
 fi
 
 # install pacman packages
-cat config/10-native.sh | sudo pacman -Sy -
+cat native.sh | sudo pacman -Sy -
 
 # install AUR packages
 sudo pacman -Sy --needed base-devel
@@ -17,11 +17,12 @@ cd yay
 makepkg -si
 cd ..
 
-cat config/20-foregin.sh | yay -Sy -
+cat foregin.sh | yay -Sy -
 
 # apply configs
 sudo pacman -Sy --needed rsync
-sudo rsync -cr config/files/ / -v
+
+su -c 'rsync -cr root/ / -v'
 
 # apply services
 sudo systemctl disable getty@tty1.service
