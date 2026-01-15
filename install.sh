@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # install pacman packages
-cat config/10-native.sh | sudo pacman -Sy
+cat config/10-native.sh | sudo pacman -Sy -
 
 # install AUR packages
 sudo pacman -Sy --needed base-devel
@@ -10,7 +10,7 @@ cd yay
 makepkg -si
 cd ..
 
-cat config/20-foregin.sh | yay -Sy
+cat config/20-foregin.sh | yay -Sy -
 
 # apply configs
 sudo pacman -Sy --needed rsync
