@@ -6,7 +6,7 @@ cat config/10-native.sh | sudo pacman -Sy
 # install AUR packages
 sudo pacman -Sy --needed base-devel
 git clone https://aur.archlinux.org/yay.git
-cd paru
+cd yay
 makepkg -si
 cd ..
 
