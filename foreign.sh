@@ -7,3 +7,4 @@ w-ctl-bin
 neo-matrix
 pipes.sh
 tty-clock
+otf-font-awesome-4
