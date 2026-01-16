@@ -33,12 +33,12 @@ sudo pacman -Sy --needed rsync
 su -c 'rsync -cr root/ / -v'
 
 # apply services
-sudo dinitctl disable getty@tty1.service
-sudo dinitctl disable getty@tty2.service
-sudo dinitctl disable getty@tty3.service
-sudo dinitctl enable ly@tty3.service
-sudo dinitctl enable ly@tty3.service
-sudo dinitctl enable ly@tty3.service
+sudo systemctl disable getty@tty1.service
+sudo systemctl disable getty@tty2.service
+sudo systemctl disable getty@tty3.service
+sudo systemctl enable ly@tty3.service
+sudo systemctl enable ly@tty3.service
+sudo systemtctl enable ly@tty3.service
 
 rm pkg.nat
 rm pkg.for

@@ -13,9 +13,10 @@ firefox
 fish
 git
 gutenprint
+cool-retro-term
 htop
 lxsession
-ly-dinit
+ly
 mplayer
 neovim
 niri
@@ -41,4 +42,5 @@ wl-clipboard
 xdg-desktop-portal-gtk
 xwayland-satellite
 waybar
+impala
 swaylock
